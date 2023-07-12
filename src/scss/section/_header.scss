@@ -27,16 +27,17 @@
 
     .search-wrapper{
         display: flex;
-    }
+        position: relative;
 
-    .search-field{
-       border: 0;
-       background-color: $color-4;
-       width: 500px;
-
-       &:focus{
-        outline: none;
-       }
+        .search-field{
+            border: 0;
+            background-color: $color-4;
+            width: 500px;
+     
+            &:focus{
+             outline: none;
+            }
+         }
     }
 
     .search-icon{
@@ -81,4 +82,24 @@
 }
 a{
     text-decoration: none;
+}
+
+.drop{
+    position: absolute;
+    left: -20px;
+    top: 150%;
+    width: 650px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgb(233, 233, 233);
+
+    .drop-list{
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #f1f1f1;
+        }
+    }
 }
