@@ -13,6 +13,7 @@ const ProductList = () => {
     <main>
       <section className='product-list'>
         <div className="container">
+          <div className='slider'></div>
           <div className='product-sort'>
             <FilterList />
             <Sort />

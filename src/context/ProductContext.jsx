@@ -22,7 +22,7 @@ const ProductContext = ({ children }) => {
     axios.get(`https://64a901138b9afaf4844a2627.mockapi.io/pizza?${searchProduct}&page=${paginate}&limit=8&sortBy=${sortProductMinusMinus}&order=${sortProductMinus}&${filterProduct}`).then(res => {
       SetProduct(res.data)
 
-      window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
     })
   }, [search, paginate, sortList, activeSort])
 
