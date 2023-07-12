@@ -7,7 +7,7 @@ import { CartCont } from '../context/CartContext';
 const CartOrderList = ({ cartList }) => {
 
     const { id, image, title, desc, price, count } = cartList;
-    const {deleteProduct} = useContext(CartCont);
+    const {deleteProduct, counMinus, countPlus} = useContext(CartCont);
 
     return (
         <div className='cart-order'>
@@ -19,9 +19,9 @@ const CartOrderList = ({ cartList }) => {
                 </div>
             </div>
             <div className='cart-order-count'>
-                <IoRemoveCircleOutline className='cart-order-minus' />
+                <IoRemoveCircleOutline onClick={() => counMinus(id)} className='cart-order-minus' />
                 <h3 className='cart-order-count-number'>{count}</h3>
-                <IoAddCircleOutline className='cart-order-plus' />
+                <IoAddCircleOutline onClick={() => countPlus(id)} className='cart-order-plus' />
             </div>
             <h3 className='cart-order-price'>{price} ₴</h3>
             <h3 className='cart-order-price-total'>{count * price} ₴</h3>

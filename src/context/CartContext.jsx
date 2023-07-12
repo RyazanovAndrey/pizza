@@ -55,9 +55,23 @@ const CartContext = ({ children }) => {
     axios.delete(`https://64a901138b9afaf4844a2627.mockapi.io/cart/${id}`)
   }
 
+  const countPlus = (id) => {
+    const findProductPlus = cart.find(item => item.id == id);
+    addToCart(findProductPlus)
+
+  }
+
+  const counMinus = (id) => {
+    setCart(cart.map(item => {
+      if(item.id == id){
+        return {...item, count: item.count > 2 ? item.count - 1 : item.count = 1}
+      }return
+    }))
+  }
+
   return (
     <div>
-      <CartCont.Provider value={{ cart, addToCart, cartTotal, cartSum, deleteProduct }}>
+      <CartCont.Provider value={{ cart, setCart, addToCart, cartTotal, cartSum, deleteProduct, counMinus, countPlus }}>
         {children}
       </CartCont.Provider>
     </div>

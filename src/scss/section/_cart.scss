@@ -1,5 +1,5 @@
 .cart-page {
-    margin-top: 300px;
+    margin-top: 200px;
 
     .cart-header {
         display: flex;
@@ -24,8 +24,10 @@
         .cart-clear {
             display: flex;
             align-items: center;
-            background-color: #fff;
+            background-color: #f3f3f3;
             border: 0;
+            border-radius: 100px;
+            padding: 10px 20px;
             cursor: pointer;
             font-size: 16px;
             color: #B9B9B9;
@@ -75,17 +77,24 @@
         align-items: center;
 
         .cart-null-title{
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 700;
         }
 
         .cart-null-text{
-            font-size: 16px;
-            color: #AAA7A7;
+            font-size: 15px;
+            color: #dadada;
             margin: 50px 0;
             max-width: 420px;
             text-align: center;
             line-height: 1.7;
+        }
+
+        .cart-null-back{
+            border: 1px solid #AAA7A7;
+            padding: 15px 30px;
+            border-radius: 100px;
+            color: #AAA7A7;
         }
     }
 }
