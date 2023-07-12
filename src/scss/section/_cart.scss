@@ -21,7 +21,7 @@
             }
         }
 
-        .cart-clear{
+        .cart-clear {
             display: flex;
             align-items: center;
             background-color: #fff;
@@ -30,16 +30,40 @@
             font-size: 16px;
             color: #B9B9B9;
 
-            .cart-delete-icon{
+            .cart-delete-icon {
                 font-size: 25px;
                 margin-right: 10px;
             }
         }
     }
 
-    .cart-total{
+    .cart-total {
         display: flex;
         justify-content: space-between;
         font-size: 22px;
+    }
+
+    .cart-button-group {
+        display: flex;
+        margin-top: 140px;
+        justify-content: space-between;
+    }
+
+    .cart-back {
+        font-size: 16px;
+        padding: 15px 30px;
+        border: 1px solid #AAA7A7;
+        border-radius: 100px;
+        color: #AAA7A7;
+        font-weight: 600;
+    }
+
+    .cart-offer{
+        font-size: 16px;
+        padding: 15px 30px;
+        font-weight: 600;
+        background-color: $color-1;
+        border-radius: 100px;
+        color: white;
     }
 }

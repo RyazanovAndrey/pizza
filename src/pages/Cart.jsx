@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
-  const { cart } = useContext(CartCont);
+  const { cart, cartTotal, cartSum } = useContext(CartCont)
 
   console.log(cart)
 
@@ -25,13 +25,12 @@ const Cart = () => {
           <CartOrderList cartList={item} />
         ))}
         <div className='cart-total'>
-          <h3 className='cart-count-total'>Усього на замовлення: </h3>
-          <h3 className='cart-count-total'>Сума замовлення: <span>0</span></h3>
+          <h3 className='cart-count-total'>Усього на замовлення: <span style={{fontWeight: 'bold'}}>{cartTotal}</span></h3>
+          <h3 className='cart-count-total'>Сума замовлення: <span style={{fontWeight: 'bold', color: '#FE5F1E'}}>{cartSum} ₴</span></h3>
         </div>
-        <div>
-          <Link to='/'>Повернутися назад</Link>
-          <button>Повернутися назад</button>
-          <button>Оплатити замовлення</button>
+        <div className='cart-button-group'>
+          <Link to='/' className='cart-back'>Повернутися назад</Link>
+          <a href="#" className="cart-offer">Оплатити замовлення</a>
         </div>
       </div>
     </div>
