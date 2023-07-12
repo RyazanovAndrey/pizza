@@ -59,11 +59,33 @@
     }
 
     .cart-offer{
+        display: flex;
+        align-items: center;
         font-size: 16px;
         padding: 15px 30px;
         font-weight: 600;
         background-color: $color-1;
         border-radius: 100px;
         color: white;
+    }
+
+    .cart-null{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cart-null-title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .cart-null-text{
+            font-size: 16px;
+            color: #AAA7A7;
+            margin: 50px 0;
+            max-width: 420px;
+            text-align: center;
+            line-height: 1.7;
+        }
     }
 }
