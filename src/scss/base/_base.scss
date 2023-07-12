@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat';
+}
+
+.container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+@include adaptive(1170px){
+    .container{
+        width: 992px;
+    }
+}
+
+@include adaptive(992px){
+    .container{
+        width: 768px;
+    }
+}
+
+@include adaptive(768px){
+    .container{
+        width: 480px;
+    }
+}
+
+@include adaptive(480px){
+    .container{
+        width: 100%;
+    }
+}
+
+

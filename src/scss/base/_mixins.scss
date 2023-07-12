@@ -1,0 +1,11 @@
+@mixin fonts ($fz, $fw) {
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+@mixin adaptive ($bp) {
+    @media (max-width: $bp){
+        @content;
+    }
+}
+

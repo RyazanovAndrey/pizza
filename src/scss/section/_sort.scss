@@ -1,0 +1,33 @@
+.sort-list{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    position: relative;
+
+    .sort-title{
+        cursor: pointer;
+        color: $color-1;
+        font-weight: 700;
+        border-bottom: 1px solid $color-1;
+    }
+
+    .sort-order{
+        position: absolute;
+        top: 150%;
+        right: 0;
+        background-color: white;
+        z-index: 99;
+        // border-radius: 10px;
+        box-shadow: 0 0 30px #c2c1c1 ;
+    }
+
+    .sort-item{
+        cursor: pointer;
+        padding: 20px 10px;
+
+        &.active{
+            background-color: $color-1;
+            color: $color-3;
+        }
+    }
+}

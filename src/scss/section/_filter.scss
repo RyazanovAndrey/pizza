@@ -1,0 +1,17 @@
+.filter-menu{
+    display: flex;
+    gap: 20px;
+
+    .filter-item{
+        
+        cursor: pointer;
+        padding: 20px 30px;
+        background-color: $color-4;
+        border-radius: 100px;
+
+        &.active{
+            background-color: $color-2;
+            color: $color-3;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.cart-page {
+    margin-top: 300px;
+
+    .cart-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .cart-wrapper {
+            display: flex;
+            align-items: center;
+
+            .cart-icon {
+                font-size: 45px;
+            }
+
+            .cart-title {
+                font-size: 32px;
+                font-weight: 700;
+                margin-left: 15px;
+            }
+        }
+
+        .cart-clear{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 0;
+            cursor: pointer;
+            font-size: 16px;
+            color: #B9B9B9;
+
+            .cart-delete-icon{
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .cart-total{
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+    }
+}
