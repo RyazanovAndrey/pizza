@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { ProductCont } from '../context/ProductContext'
 
 const FilterList = () => {
 
-    const filterList = ['Всі', 'Курка', 'Гриби', 'Папероні', 'Сир']
-    const [activeSort, setActiveSort] = useState(0)
+  const {activeSort, setActiveSort} = useContext(ProductCont)
+
+    const filterList = ['Всі', 'Курка', 'Гриби', 'Папероні', 'Сир','Морепродукти']
 
   return (
     <div className='filter-list'>

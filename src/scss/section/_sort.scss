@@ -1,7 +1,7 @@
 .sort-list{
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 335px;
     position: relative;
 
     .sort-title{
@@ -17,8 +17,10 @@
         right: 0;
         background-color: white;
         z-index: 99;
-        // border-radius: 10px;
-        box-shadow: 0 0 30px #c2c1c1 ;
+        border-radius: 10px;
+        box-shadow: 0 0 30px #c2c1c1;
+        overflow: hidden;
+
     }
 
     .sort-item{
