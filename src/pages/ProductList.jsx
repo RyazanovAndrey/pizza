@@ -4,6 +4,7 @@ import Sort from '../components/Sort'
 import { ProductCont } from '../context/ProductContext'
 import Product from '../components/Product'
 import ReactPaginate from 'react-paginate';
+import slider from '../../public/img/pizza3.jpg'
 
 const ProductList = () => {
 
@@ -13,7 +14,7 @@ const ProductList = () => {
     <main>
       <section className='product-list'>
         <div className="container">
-          <div className='slider'></div>
+          <img src={slider} alt="" style={{borderRadius: '20px', marginBottom: '50px'}} />
           <div className='product-sort'>
             <FilterList />
             <Sort />
