@@ -14,7 +14,7 @@ const ProductList = () => {
     <main>
       <section className='product-list'>
         <div className="container">
-          <img src={slider} alt="" style={{borderRadius: '20px', marginBottom: '50px'}} />
+          <img src={slider} alt="" className='slider-img' />
           <div className='product-sort'>
             <FilterList />
             <Sort />

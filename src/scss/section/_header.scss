@@ -10,12 +10,21 @@
 
 .wrapper{
     display: flex;
+    flex-wrap: wrap;
     margin: 50px 0;
     justify-content: space-between;
     align-items: center;
 }
 
 .search{
+
+    @include adaptive(1170px){
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,12 +33,18 @@
     border-radius: 100px;
     background-color: $color-4;
     padding: 0 20px;
+    
 
     .search-wrapper{
         display: flex;
         position: relative;
 
         .search-field{
+
+            @include adaptive(768px){
+                max-width: 450px;
+            }
+
             border: 0;
             background-color: $color-4;
             width: 500px;

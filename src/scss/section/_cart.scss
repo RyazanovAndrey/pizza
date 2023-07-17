@@ -2,6 +2,12 @@
     margin-top: 200px;
 
     .cart-header {
+
+        @include adaptive(1170px){
+            margin-top: 300px;
+        }
+
+
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
